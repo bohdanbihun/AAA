@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='ControllerAsApp'>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Екзаменаційна задача
+</title>
+</head>
+<body>
+<div id="list1" ng-controller='ShoppingListController1 as list1'>
+    <h3>Каталог йогуртів</h3>
+    <ol>
+        <li ng-repeat="item in list1.item">
+            Наявно {{item.quantity}}
+            ящиків йогурту марки "{{item.mark}}"
+            <button ng-click="list1.removeItem($index);">Видалити</button>
+            <button ng-click="list1.removeItem2($index);">Приховати</button>
+        </li>
+    </ol>
+</div>
+
+</body>
+</html>
