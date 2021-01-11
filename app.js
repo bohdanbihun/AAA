@@ -75,7 +75,7 @@
 		
 		  service.removeItem2 = function (itemIndex) {
             boughtItems.delete(items[itemIndex]);
-            items.delete(itemIndex, 1);
+            items.removeItem(itemIndex, 1);
         };
 
 
